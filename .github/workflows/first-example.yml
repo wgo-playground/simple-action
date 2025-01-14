@@ -1,0 +1,19 @@
+name: My first workflow
+
+on: push
+
+jobs: 
+  first_job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome message
+        run: |
+          echo "Hello, Welcome to my simple Action"
+          echo "By Lee Gottlieb"
+      
+      - name: List File
+        run: ls
+      
+      - name: read file
+        run: cate README.md
+
