@@ -11,9 +11,12 @@ jobs:
           echo "Hello, Welcome to my simple Action"
           echo "By Lee Gottlieb"
       
+      - name: Checkout
+        uses: actions/checkout@v4
+      
       - name: List File
         run: ls
       
       - name: read file
-        run: cate README.md
+        run: cat README.md
 
